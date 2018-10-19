@@ -1,0 +1,55 @@
+"Enter the maximum number of points to be achieved:Enter the number of points you achieved:You achieved%"
+
+inc 12
+
+# enter max Points:
+lit 0
+lit 50
+lit 51
+out 2
+
+# Read User-Input
+la 0 32
+la 0 36
+in 0
+
+# enter reached Points:
+lit 50
+lit 40
+lit 41
+out 2
+
+# read 2nd Input
+la 0 36
+la 0 40
+in 0
+
+out 3
+
+# Calculation
+la 0 40
+lv 0 36
+lit 100
+mul
+lv 0 32
+div
+sto
+
+# output:
+lit 90
+lit 12
+lit 13
+out 2
+
+lv 0 40
+lit 1
+out 0
+
+lit 102
+lit 1
+lit 1
+out 2
+
+out 3
+
+halt
